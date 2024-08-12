@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>Free Online Student Registration Form</title>
+    <style>
+        body{
+            background-color:white;
+            opacity: 100%;
+        }
+        .form-item label {
+            display: block;
+            margin-bottom:5px;
+            font-weight: bold;
+        }
+        h2{
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration From</h2>
+        <form action="">
+            <div>
+            <label for="fullname">Student Name:</label>
+            <input type="text" name="fullname" id="fullname">
+            </div><br>
+            <label for="fullname">Student Image:</label>
+            <input type="file" name="studentimage" id="studentimage">
+            <br><br>
+            <div>
+                <label for="username">Father's Name:</label>
+                <input type="text" name="username" id="username">
+                </div>
+                <br>
+                <div>
+                    <label for="username">Mother's Name:</label>
+                    <input type="text" name="username" id="username">
+                </div><br>
+                <div>
+                    <label for="gender"><b>Gender:</b></label>
+                    <label for="gender">male</label>
+                    <input type="radio" name="gender" id="gender" value="male">
+                    <label for="gender">female</label>
+                    <input type="radio" name="gender" id="gender" value="female">
+                    <label for="gender">other</label>
+                    <input type="radio" name="gender" id="gender" value="other">
+                </div><br>
+                <div>
+                    <label for="email"><b>Date of Birth:</b></label>
+                    <input type="date">
+                </div><br>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                </div><br>
+                <div>
+                    <label for="level">Level:</label>
+                    <select name="level" id="level">
+                        <option value="highschool">High School</option>
+                        <option value="highschool">Bachelors </option>
+                        <option value="highschool">Masters</option>
+                        <option value="highschool">Phd</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="department">Department:</label>
+                    <select name="department" id="department">
+                        <option value="electrical">Electrical Engineering</option>
+                        <option value="electrical">Computer Engineering</option>
+                        <option value="electrical">Software Engineering</option>
+                        <option value="electrical">Civil Engineering</option>
+                    </select>
+                </div><br>  
+                <div>
+                    <label for="phone no">Tel/Mobile:</label>
+                    <input type="tel" name="phone no" id="phone no">
+                </div>
+                
+                <h3>Address:</h3>
+                <fieldset style="border-color:black ; width: 550px;">
+                <div class="form-item">
+                    <label for="state">State:</label>
+                    <input type="text" name="state" id="state">
+                </div><br>
+                <div class="form-item">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city">
+                </div><br>
+                <div class="form-item">
+                    <label for="pin">pin Code:</label>
+                    <input type="number" name="pin " id="pin">
+                </div><br>
+                <div class="form-item">
+                    <label for="phone no">Tel/Mobile:</label>
+                    <input type="tel" name="phone no" id="phone no">
+                </fieldset>
+                </div><br>
+                <button class="register" type="submit">Register</button>
+            </form>      
+</body>
+</html>

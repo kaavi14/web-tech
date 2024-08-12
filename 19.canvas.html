@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Canvas</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var c  = canvas.getContext('2d');
+        function drawLine(x1, y1, x2, y2, color, lineWidth) {
+            c.strokeStyle = color;
+            c.lineWidth = lineWidth;
+            c.beginPath();
+            c.moveTo(x1, y1);
+            c.lineTo(x2, y2);
+            c.stroke();
+        }
+        function drawCircle(x, y, radius, color, lineWidth) {
+            c.strokeStyle = color;
+            c.lineWidth = lineWidth;
+            c.beginPath();
+            c.arc(x, y, radius, 0, Math.PI * 2, false);
+            c.stroke();
+        }
+        function drawRectangle(x, y, width, height, color) {
+            c.fillStyle = color;
+            c.fillRect(x, y, width, height);
+        }
+        drawLine(300, 50, 500, 200, 'violet', 5);
+        drawCircle(400, 300, 75, 'green', 4);
+        drawRectangle(50,50,100,100,'yellow');
+        </script>
+    </canvas>
+</body>
+</html>
+
+
